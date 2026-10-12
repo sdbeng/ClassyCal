@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ClassyCalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
         }
+        .modelContainer(
+            for: [
+                Semester.self,
+                Subject.self
+            ]
+        )
     }
 }

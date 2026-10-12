@@ -6,14 +6,69 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EADA6074307C55250011C0EB /* README-Plan.md in Resources */ = {isa = PBXBuildFile; fileRef = EADA6073307C55250011C0EB /* README-Plan.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EADA6097307D63CC0011C0EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EADA6055307C43560011C0EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EADA605C307C43560011C0EB;
+			remoteInfo = ClassyCal;
+		};
+		EADA60A6307D71390011C0EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EADA6055307C43560011C0EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EADA605C307C43560011C0EB;
+			remoteInfo = ClassyCal;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EADA605D307C43560011C0EB /* ClassyCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassyCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADA6073307C55250011C0EB /* README-Plan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-Plan.md"; sourceTree = "<group>"; };
+		EADA6093307D63CC0011C0EB /* ClassyCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassyCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADA60A2307D71390011C0EB /* ClassyCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassyCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EADA60AE307D720C0011C0EB /* Exceptions for "ClassyCalUITests" folder in "ClassyCalUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SubjectPersistenceTests.swift,
+			);
+			target = EADA6092307D63CC0011C0EB /* ClassyCalUITests */;
+		};
+		EADA60AF307D720C0011C0EB /* Exceptions for "ClassyCalUITests" folder in "ClassyCalTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SubjectPersistenceTests.swift,
+			);
+			target = EADA60A1307D71390011C0EB /* ClassyCalTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EADA605F307C43560011C0EB /* ClassyCal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ClassyCal;
+			sourceTree = "<group>";
+		};
+		EADA6094307D63CC0011C0EB /* ClassyCalUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EADA60AE307D720C0011C0EB /* Exceptions for "ClassyCalUITests" folder in "ClassyCalUITests" target */,
+				EADA60AF307D720C0011C0EB /* Exceptions for "ClassyCalUITests" folder in "ClassyCalTests" target */,
+			);
+			path = ClassyCalUITests;
+			sourceTree = "<group>";
+		};
+		EADA60A3307D71390011C0EB /* ClassyCalTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ClassyCalTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -24,13 +79,26 @@
 			files = (
 			);
 		};
+		EADA6090307D63CC0011C0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		EADA609F307D71390011C0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		EADA6054307C43560011C0EB = {
 			isa = PBXGroup;
 			children = (
+				EADA6073307C55250011C0EB /* README-Plan.md */,
 				EADA605F307C43560011C0EB /* ClassyCal */,
+				EADA6094307D63CC0011C0EB /* ClassyCalUITests */,
+				EADA60A3307D71390011C0EB /* ClassyCalTests */,
 				EADA605E307C43560011C0EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				EADA605D307C43560011C0EB /* ClassyCal.app */,
+				EADA6093307D63CC0011C0EB /* ClassyCalUITests.xctest */,
+				EADA60A2307D71390011C0EB /* ClassyCalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +134,48 @@
 			productReference = EADA605D307C43560011C0EB /* ClassyCal.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EADA6092307D63CC0011C0EB /* ClassyCalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADA6099307D63CC0011C0EB /* Build configuration list for PBXNativeTarget "ClassyCalUITests" */;
+			buildPhases = (
+				EADA608F307D63CC0011C0EB /* Sources */,
+				EADA6090307D63CC0011C0EB /* Frameworks */,
+				EADA6091307D63CC0011C0EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EADA6098307D63CC0011C0EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EADA6094307D63CC0011C0EB /* ClassyCalUITests */,
+			);
+			name = ClassyCalUITests;
+			productName = ClassyCalUITests;
+			productReference = EADA6093307D63CC0011C0EB /* ClassyCalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EADA60A1307D71390011C0EB /* ClassyCalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADA60A8307D71390011C0EB /* Build configuration list for PBXNativeTarget "ClassyCalTests" */;
+			buildPhases = (
+				EADA609E307D71390011C0EB /* Sources */,
+				EADA609F307D71390011C0EB /* Frameworks */,
+				EADA60A0307D71390011C0EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EADA60A7307D71390011C0EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EADA60A3307D71390011C0EB /* ClassyCalTests */,
+			);
+			name = ClassyCalTests;
+			productName = ClassyCalTests;
+			productReference = EADA60A2307D71390011C0EB /* ClassyCalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -76,6 +188,14 @@
 				TargetAttributes = {
 					EADA605C307C43560011C0EB = {
 						CreatedOnToolsVersion = 27.0;
+					};
+					EADA6092307D63CC0011C0EB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = EADA605C307C43560011C0EB;
+					};
+					EADA60A1307D71390011C0EB = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = EADA605C307C43560011C0EB;
 					};
 				};
 			};
@@ -94,12 +214,25 @@
 			projectRoot = "";
 			targets = (
 				EADA605C307C43560011C0EB /* ClassyCal */,
+				EADA6092307D63CC0011C0EB /* ClassyCalUITests */,
+				EADA60A1307D71390011C0EB /* ClassyCalTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EADA605B307C43560011C0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				EADA6074307C55250011C0EB /* README-Plan.md in Resources */,
+			);
+		};
+		EADA6091307D63CC0011C0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		EADA60A0307D71390011C0EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -112,7 +245,30 @@
 			files = (
 			);
 		};
+		EADA608F307D63CC0011C0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		EADA609E307D71390011C0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EADA6098307D63CC0011C0EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EADA605C307C43560011C0EB /* ClassyCal */;
+			targetProxy = EADA6097307D63CC0011C0EB /* PBXContainerItemProxy */;
+		};
+		EADA60A7307D71390011C0EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EADA605C307C43560011C0EB /* ClassyCal */;
+			targetProxy = EADA60A6307D71390011C0EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EADA6066307C43570011C0EB /* Debug configuration for PBXProject "ClassyCal" */ = {
@@ -243,20 +399,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RB4XWSSCZH;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdb.ClassyCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -275,20 +433,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RB4XWSSCZH;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sergdb.ClassyCal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -297,6 +457,88 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EADA609A307D63CC0011C0EB /* Debug configuration for PBXNativeTarget "ClassyCalUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal.ClassyCalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClassyCal;
+			};
+			name = Debug;
+		};
+		EADA609B307D63CC0011C0EB /* Release configuration for PBXNativeTarget "ClassyCalUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal.ClassyCalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClassyCal;
+			};
+			name = Release;
+		};
+		EADA60A9307D71390011C0EB /* Debug configuration for PBXNativeTarget "ClassyCalTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal.ClassyCalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassyCal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClassyCal";
+			};
+			name = Debug;
+		};
+		EADA60AA307D71390011C0EB /* Release configuration for PBXNativeTarget "ClassyCalTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U23D3YTUY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergdbdev.ClassyCal.ClassyCalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassyCal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClassyCal";
 			};
 			name = Release;
 		};
@@ -316,6 +558,22 @@
 			buildConfigurations = (
 				EADA6069307C43570011C0EB /* Debug configuration for PBXNativeTarget "ClassyCal" */,
 				EADA606A307C43570011C0EB /* Release configuration for PBXNativeTarget "ClassyCal" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EADA6099307D63CC0011C0EB /* Build configuration list for PBXNativeTarget "ClassyCalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADA609A307D63CC0011C0EB /* Debug configuration for PBXNativeTarget "ClassyCalUITests" */,
+				EADA609B307D63CC0011C0EB /* Release configuration for PBXNativeTarget "ClassyCalUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		EADA60A8307D71390011C0EB /* Build configuration list for PBXNativeTarget "ClassyCalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADA60A9307D71390011C0EB /* Debug configuration for PBXNativeTarget "ClassyCalTests" */,
+				EADA60AA307D71390011C0EB /* Release configuration for PBXNativeTarget "ClassyCalTests" */,
 			);
 			defaultConfigurationName = Release;
 		};
