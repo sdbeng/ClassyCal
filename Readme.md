@@ -30,6 +30,11 @@ I'll keep using @Query for the list, @Bindable for editing observable model prop
 For the edit form, though, we'll use draft state (@State) instead of binding text fields directly to the persisted model. This prevents pressing Cancel from leaving partially edited values in SwiftData.
 ```
 No ViewModel is needed yet.
+Todo: create 2 new files: SUbjectDetailView, SubjectFormView (reusable) form view
+One simplification above: subject.semester! assumes every subject belongs to a semester. That is consistent with our intended app rules, but the Day 1 model allows a nil relationship.
+Before shipping, we'll enforce that invariant consistently. For now, only edit subjects created through the normal app flow, which assigns a semester.
+
+## Day 3
 
 ## Copyright
 2026 West AI Engineering - All Rights Reserved

@@ -51,16 +51,20 @@ struct SubjectListView: View {
                 )
             } else {
                 ForEach(filteredSubjects) { subject in
-                    VStack(
-                        alignment: .leading,
-                        spacing: 4
-                    ) {
-                        Text(subject.name)
-                            .font(.headline)
-
-                        Text(subject.code)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                    NavigationLink {
+                        SubjectDetailView(subject: subject)
+                    } label:{
+                        VStack(
+                            alignment: .leading,
+                            spacing: 4
+                        ) {
+                            Text(subject.name)
+                                .font(.headline)
+                            
+                            Text(subject.code)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
             }
@@ -113,7 +117,7 @@ struct SubjectListView: View {
         }
         .sheet(isPresented: $showingAddSubject) {
             if let selectedSemester {
-                AddSubjectView(semester: selectedSemester)
+                SubjectFormView(semester: selectedSemester)
             }
         }
         .onAppear {
