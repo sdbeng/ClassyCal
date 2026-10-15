@@ -11,6 +11,18 @@ import Testing
 
 @testable import ClassyCal
 
+private func makeTestContainer() throws -> ModelContainer {
+    let schema = Schema([
+        Semester.self,
+        Subject.self
+    ])
+    let configuration = ModelConfiguration(
+        schema: schema,
+        isStoredInMemoryOnly: true
+    )
+    return try ModelContainer(for: schema, configurations: [configuration])
+}
+
 @MainActor
 struct SubjectPersistenceTests {
     
@@ -55,5 +67,28 @@ struct SubjectPersistenceTests {
         #expect(savedSubjects.first?.name == "Computer Science")
         #expect(savedSubjects.first?.semester?.name == "Fall 2026")
     }
-}
+    
+    @Test
+    func updatingSubjectPersistsChanges() throws {
+        let container = try makeTestContainer()
+        let context = container.mainContext
 
+        let subject = Subject(
+            name: "Math",
+            code: "MATH101"
+        )
+
+        context.insert(subject)
+        try context.save()
+
+        subject.name = "Advanced Math"
+        try context.save()
+
+        let saved = try context.fetch(
+            FetchDescriptor<Subject>()
+        )
+
+        #expect(saved.count == 1)
+        #expect(saved.first?.name == "Advanced Math")
+    }
+}
